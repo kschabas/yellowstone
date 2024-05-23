@@ -19,6 +19,8 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+# You must remove the '+' signs to be able to migrate your database
+
 development:
   <<: *default
   database: yellowstone_development
