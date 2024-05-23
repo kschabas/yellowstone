@@ -16,6 +16,10 @@
                                          POST   /users(.:format)                                                                                  devise/registrations#create
                       rails_health_check GET    /up(.:format)                                                                                     rails/health#show
                                     root GET    /                                                                                                 applications#index
+                             assignments GET    /assignments(.:format)                                                                            assignments#index
+                              assignment GET    /assignments/:id(.:format)                                                                        assignments#show
+                                         PATCH  /assignments/:id(.:format)                                                                        assignments#update
+                                         PUT    /assignments/:id(.:format)                                                                        assignments#update
         turbo_recede_historical_location GET    /recede_historical_location(.:format)                                                             turbo/native/navigation#recede
         turbo_resume_historical_location GET    /resume_historical_location(.:format)                                                             turbo/native/navigation#resume
        turbo_refresh_historical_location GET    /refresh_historical_location(.:format)                                                            turbo/native/navigation#refresh

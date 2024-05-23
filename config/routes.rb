@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
    root "applications#index"
+
+   resources :assignments, only: [:index, :show, :update]
 end
