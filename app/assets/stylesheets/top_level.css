@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  
+}
+div.regular {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  background-color: darkgreen;
+  color: white;
+  padding: 20px
+}
+
+.content {
+  grid-column: 2/3;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
