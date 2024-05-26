@@ -11,6 +11,19 @@ class AssignmentsController < ApplicationController
   end
 
   def update
+    @assignment = Assignment.find(params[:id])
+    s = Submission.new
+    s.add_guesses(params['q_guesses'],params['q_ids'],current_user.id)
+
+    redirect_to @assignment
   end
+
+  def test
+  end
+
+  private
+    def assignment_params
+      params.require(:assignment).permit(:title)
+    end
 
 end
