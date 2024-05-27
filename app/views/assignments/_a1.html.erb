@@ -1,11 +1,13 @@
 <h1>Welcome to assignment <%= assignment.title%></h1>
 
 <%= form_with model: assignment do |a_form| %>
- <%@cur_guess = assignment.return_guess(1,current_user.id)%>
- <input type="hidden" name="q_ids[]", value=1>
+ <% q_id = Question.where(code: "RUSH1").first.id%>
+ <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
+ <input type="hidden" name="q_ids[]", value=q_id>
  <input type="text" name="q_guesses[]", value=<%=@cur_guess%>>
- <%@cur_guess = assignment.return_guess(2,current_user.id)%>
- <input type="hidden" name="q_ids[]", value=2>
+ <% q_id = Question.where(code: "RUSH2").first.id%>
+ <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
+ <input type="hidden" name="q_ids[]", value=q_id>
  <input type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
   <%= a_form.submit "Submit" %>
 <%end%>

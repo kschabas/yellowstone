@@ -1,6 +1,6 @@
 <h1> <%=@assignment.title%> </h1>
-<%case @assignment.id %>
-<% when 1%>
+<%case @assignment.title %>
+<% when "Mount Rushmore"%>
 <%= render "a1", assignment: @assignment %>
 <% else %>
   <div>No valid assignment Found!</div>

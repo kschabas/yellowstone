@@ -1,0 +1,100 @@
+2024-05-27T14:53:42.532094+00:00 app[web.1]: [2] - Worker 0 (PID: 5) booted in 2.32s, phase: 0
+2024-05-27T14:53:42.537187+00:00 app[web.1]: [2] - Worker 2 (PID: 9) booted in 2.33s, phase: 0
+2024-05-27T14:53:42.554714+00:00 app[web.1]: [2] - Worker 1 (PID: 7) booted in 2.34s, phase: 0
+2024-05-27T14:55:11.574168+00:00 app[web.1]: I, [2024-05-27T14:55:11.574053 #7]  INFO -- : [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901] Started GET "/" for 206.172.98.210 at 2024-05-27 14:55:11 +0000
+2024-05-27T14:55:11.575145+00:00 app[web.1]: I, [2024-05-27T14:55:11.575100 #7]  INFO -- : [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901] Processing by AssignmentsController#index as HTML
+2024-05-27T14:55:11.664124+00:00 app[web.1]: I, [2024-05-27T14:55:11.664044 #7]  INFO -- : [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]   Rendered layout layouts/application.html.erb (Duration: 85.9ms | Allocations: 7310)
+2024-05-27T14:55:11.664274+00:00 app[web.1]: I, [2024-05-27T14:55:11.664243 #7]  INFO -- : [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901] Completed 500 Internal Server Error in 89ms (ActiveRecord: 48.9ms | Allocations: 8916)
+2024-05-27T14:55:11.665052+00:00 app[web.1]: E, [2024-05-27T14:55:11.665003 #7] ERROR -- : [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]
+2024-05-27T14:55:11.665053+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901] ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "assignments" does not exist
+2024-05-27T14:55:11.665054+00:00 app[web.1]: LINE 1: SELECT "assignments".* FROM "assignments"
+2024-05-27T14:55:11.665055+00:00 app[web.1]: ^
+2024-05-27T14:55:11.665055+00:00 app[web.1]: ):
+2024-05-27T14:55:11.665064+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]     3:   <li class="sidebar_list_item"><%= link_to "Home", assignments_path%></li>
+2024-05-27T14:55:11.665064+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]     4:   <li class="sidebar_list_item"><%= link_to "Assignments", assignments_path%></li>
+2024-05-27T14:55:11.665065+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]     5:   <ul id="assignment_listing">
+2024-05-27T14:55:11.665065+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]     6:     <% assignments.each do |a| %>
+2024-05-27T14:55:11.665066+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]     7:       <li class="assignment_item"> <%=link_to a.title, a %></li>
+2024-05-27T14:55:11.665066+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]     8:     <%end%>
+2024-05-27T14:55:11.665067+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]     9:   </ul>
+2024-05-27T14:55:11.665067+00:00 app[web.1]: [21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901]
+2024-05-27T14:55:11.666029+00:00 heroku[router]: at=info method=GET path="/" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=21f83ab7-3b1d-45aa-bd2e-a0b1ec9bc901 fwd="206.172.98.210" dyno=web.1 connect=0ms service=93ms status=500 bytes=1891 protocol=https
+2024-05-27T14:55:11.733216+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=e7851877-d441-4bda-895e-bc719d875618 fwd="206.172.98.210" dyno=web.1 connect=0ms service=1ms status=304 bytes=131 protocol=https
+2024-05-27T14:55:17.804253+00:00 app[web.1]: I, [2024-05-27T14:55:17.804173 #9]  INFO -- : [6c6b4e74-8e34-4bd7-ba7f-90f1c4c18fea] Started GET "/assignment" for 206.172.98.210 at 2024-05-27 14:55:17 +0000
+2024-05-27T14:55:17.804794+00:00 app[web.1]: E, [2024-05-27T14:55:17.804757 #9] ERROR -- : [6c6b4e74-8e34-4bd7-ba7f-90f1c4c18fea]
+2024-05-27T14:55:17.804795+00:00 app[web.1]: [6c6b4e74-8e34-4bd7-ba7f-90f1c4c18fea] ActionController::RoutingError (No route matches [GET] "/assignment"):
+2024-05-27T14:55:17.804808+00:00 app[web.1]: [6c6b4e74-8e34-4bd7-ba7f-90f1c4c18fea]
+2024-05-27T14:55:17.806029+00:00 heroku[router]: at=info method=GET path="/assignment" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=6c6b4e74-8e34-4bd7-ba7f-90f1c4c18fea fwd="206.172.98.210" dyno=web.1 connect=0ms service=3ms status=404 bytes=1966 protocol=https
+2024-05-27T14:55:23.907454+00:00 app[web.1]: I, [2024-05-27T14:55:23.907374 #5]  INFO -- : [27f52874-ef96-4b55-8733-8d34246eba24] Started GET "/assignments" for 206.172.98.210 at 2024-05-27 14:55:23 +0000
+2024-05-27T14:55:23.908430+00:00 app[web.1]: I, [2024-05-27T14:55:23.908387 #5]  INFO -- : [27f52874-ef96-4b55-8733-8d34246eba24] Processing by AssignmentsController#index as HTML
+2024-05-27T14:55:23.977424+00:00 app[web.1]: I, [2024-05-27T14:55:23.977352 #5]  INFO -- : [27f52874-ef96-4b55-8733-8d34246eba24]   Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 6181)
+2024-05-27T14:55:23.977555+00:00 app[web.1]: I, [2024-05-27T14:55:23.977529 #5]  INFO -- : [27f52874-ef96-4b55-8733-8d34246eba24] Completed 500 Internal Server Error in 69ms (ActiveRecord: 28.6ms | Allocations: 7744)
+2024-05-27T14:55:23.978112+00:00 app[web.1]: E, [2024-05-27T14:55:23.978074 #5] ERROR -- : [27f52874-ef96-4b55-8733-8d34246eba24]
+2024-05-27T14:55:23.978112+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24] ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "assignments" does not exist
+2024-05-27T14:55:23.978113+00:00 app[web.1]: LINE 1: SELECT "assignments".* FROM "assignments"
+2024-05-27T14:55:23.978113+00:00 app[web.1]: ^
+2024-05-27T14:55:23.978114+00:00 app[web.1]: ):
+2024-05-27T14:55:23.978114+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]     3:   <li class="sidebar_list_item"><%= link_to "Home", assignments_path%></li>
+2024-05-27T14:55:23.978114+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]     4:   <li class="sidebar_list_item"><%= link_to "Assignments", assignments_path%></li>
+2024-05-27T14:55:23.978116+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]     5:   <ul id="assignment_listing">
+2024-05-27T14:55:23.978116+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]     6:     <% assignments.each do |a| %>
+2024-05-27T14:55:23.978117+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]     7:       <li class="assignment_item"> <%=link_to a.title, a %></li>
+2024-05-27T14:55:23.978117+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]     8:     <%end%>
+2024-05-27T14:55:23.978117+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]     9:   </ul>
+2024-05-27T14:55:23.978117+00:00 app[web.1]: [27f52874-ef96-4b55-8733-8d34246eba24]
+2024-05-27T14:55:23.979083+00:00 heroku[router]: at=info method=GET path="/assignments" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=27f52874-ef96-4b55-8733-8d34246eba24 fwd="206.172.98.210" dyno=web.1 connect=1ms service=73ms status=500 bytes=1891 protocol=https
+2024-05-27T14:55:27.318334+00:00 app[web.1]: I, [2024-05-27T14:55:27.318256 #7]  INFO -- : [788b184e-98ad-4ad8-a5b1-827474ebc3f0] Started GET "/" for 206.172.98.210 at 2024-05-27 14:55:27 +0000
+2024-05-27T14:55:27.318950+00:00 app[web.1]: I, [2024-05-27T14:55:27.318904 #7]  INFO -- : [788b184e-98ad-4ad8-a5b1-827474ebc3f0] Processing by AssignmentsController#index as HTML
+2024-05-27T14:55:27.323610+00:00 app[web.1]: I, [2024-05-27T14:55:27.323564 #7]  INFO -- : [788b184e-98ad-4ad8-a5b1-827474ebc3f0]   Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 538)
+2024-05-27T14:55:27.323697+00:00 app[web.1]: I, [2024-05-27T14:55:27.323675 #7]  INFO -- : [788b184e-98ad-4ad8-a5b1-827474ebc3f0] Completed 500 Internal Server Error in 5ms (ActiveRecord: 3.4ms | Allocations: 791)
+2024-05-27T14:55:27.324071+00:00 app[web.1]: E, [2024-05-27T14:55:27.324041 #7] ERROR -- : [788b184e-98ad-4ad8-a5b1-827474ebc3f0]
+2024-05-27T14:55:27.324072+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0] ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "assignments" does not exist
+2024-05-27T14:55:27.324072+00:00 app[web.1]: LINE 1: SELECT "assignments".* FROM "assignments"
+2024-05-27T14:55:27.324073+00:00 app[web.1]: ^
+2024-05-27T14:55:27.324073+00:00 app[web.1]: ):
+2024-05-27T14:55:27.324074+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]     3:   <li class="sidebar_list_item"><%= link_to "Home", assignments_path%></li>
+2024-05-27T14:55:27.324074+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]     4:   <li class="sidebar_list_item"><%= link_to "Assignments", assignments_path%></li>
+2024-05-27T14:55:27.324075+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]     5:   <ul id="assignment_listing">
+2024-05-27T14:55:27.324075+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]     6:     <% assignments.each do |a| %>
+2024-05-27T14:55:27.324076+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]     7:       <li class="assignment_item"> <%=link_to a.title, a %></li>
+2024-05-27T14:55:27.324076+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]     8:     <%end%>
+2024-05-27T14:55:27.324077+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]     9:   </ul>
+2024-05-27T14:55:27.324077+00:00 app[web.1]: [788b184e-98ad-4ad8-a5b1-827474ebc3f0]
+2024-05-27T14:55:27.324891+00:00 heroku[router]: at=info method=GET path="/" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=788b184e-98ad-4ad8-a5b1-827474ebc3f0 fwd="206.172.98.210" dyno=web.1 connect=0ms service=7ms status=500 bytes=1891 protocol=https
+2024-05-27T14:58:22.260261+00:00 app[web.1]: I, [2024-05-27T14:58:22.260178 #5]  INFO -- : [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b] Started GET "/" for 206.172.98.210 at 2024-05-27 14:58:22 +0000
+2024-05-27T14:58:22.260919+00:00 app[web.1]: I, [2024-05-27T14:58:22.260873 #5]  INFO -- : [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b] Processing by AssignmentsController#index as HTML
+2024-05-27T14:58:22.265369+00:00 app[web.1]: I, [2024-05-27T14:58:22.265323 #5]  INFO -- : [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]   Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 538)
+2024-05-27T14:58:22.265455+00:00 app[web.1]: I, [2024-05-27T14:58:22.265432 #5]  INFO -- : [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b] Completed 500 Internal Server Error in 4ms (ActiveRecord: 3.3ms | Allocations: 791)
+2024-05-27T14:58:22.265880+00:00 app[web.1]: E, [2024-05-27T14:58:22.265847 #5] ERROR -- : [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]
+2024-05-27T14:58:22.265882+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b] ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "assignments" does not exist
+2024-05-27T14:58:22.265883+00:00 app[web.1]: LINE 1: SELECT "assignments".* FROM "assignments"
+2024-05-27T14:58:22.265884+00:00 app[web.1]: ^
+2024-05-27T14:58:22.265884+00:00 app[web.1]: ):
+2024-05-27T14:58:22.265885+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]     3:   <li class="sidebar_list_item"><%= link_to "Home", assignments_path%></li>
+2024-05-27T14:58:22.265886+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]     4:   <li class="sidebar_list_item"><%= link_to "Assignments", assignments_path%></li>
+2024-05-27T14:58:22.265886+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]     5:   <ul id="assignment_listing">
+2024-05-27T14:58:22.265886+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]     6:     <% assignments.each do |a| %>
+2024-05-27T14:58:22.265887+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]     7:       <li class="assignment_item"> <%=link_to a.title, a %></li>
+2024-05-27T14:58:22.265887+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]     8:     <%end%>
+2024-05-27T14:58:22.265888+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]     9:   </ul>
+2024-05-27T14:58:22.265888+00:00 app[web.1]: [1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b]
+2024-05-27T14:58:22.267564+00:00 heroku[router]: at=info method=GET path="/" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=1c0a1dc6-6109-42e1-ad61-1ee4e3a80f7b fwd="206.172.98.210" dyno=web.1 connect=0ms service=8ms status=500 bytes=1891 protocol=https
+2024-05-27T14:58:22.333570+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=11a418df-b996-480c-83f5-323d37712168 fwd="206.172.98.210" dyno=web.1 connect=0ms service=1ms status=304 bytes=131 protocol=https
+2024-05-27T14:58:23.428172+00:00 app[web.1]: I, [2024-05-27T14:58:23.428079 #10]  INFO -- : [3b69388e-8388-4134-b764-eeacc1a5431a] Started GET "/" for 206.172.98.210 at 2024-05-27 14:58:23 +0000
+2024-05-27T14:58:23.429096+00:00 app[web.1]: I, [2024-05-27T14:58:23.429052 #10]  INFO -- : [3b69388e-8388-4134-b764-eeacc1a5431a] Processing by AssignmentsController#index as HTML
+2024-05-27T14:58:23.478884+00:00 app[web.1]: I, [2024-05-27T14:58:23.478810 #10]  INFO -- : [3b69388e-8388-4134-b764-eeacc1a5431a]   Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 6180)
+2024-05-27T14:58:23.479025+00:00 app[web.1]: I, [2024-05-27T14:58:23.478995 #10]  INFO -- : [3b69388e-8388-4134-b764-eeacc1a5431a] Completed 500 Internal Server Error in 50ms (ActiveRecord: 18.5ms | Allocations: 7741)
+2024-05-27T14:58:23.479503+00:00 app[web.1]: E, [2024-05-27T14:58:23.479461 #10] ERROR -- : [3b69388e-8388-4134-b764-eeacc1a5431a]
+2024-05-27T14:58:23.479504+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a] ActionView::Template::Error (PG::UndefinedTable: ERROR:  relation "assignments" does not exist
+2024-05-27T14:58:23.479504+00:00 app[web.1]: LINE 1: SELECT "assignments".* FROM "assignments"
+2024-05-27T14:58:23.479505+00:00 app[web.1]: ^
+2024-05-27T14:58:23.479505+00:00 app[web.1]: ):
+2024-05-27T14:58:23.479507+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]     3:   <li class="sidebar_list_item"><%= link_to "Home", assignments_path%></li>
+2024-05-27T14:58:23.479507+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]     4:   <li class="sidebar_list_item"><%= link_to "Assignments", assignments_path%></li>
+2024-05-27T14:58:23.479508+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]     5:   <ul id="assignment_listing">
+2024-05-27T14:58:23.479508+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]     6:     <% assignments.each do |a| %>
+2024-05-27T14:58:23.479509+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]     7:       <li class="assignment_item"> <%=link_to a.title, a %></li>
+2024-05-27T14:58:23.479509+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]     8:     <%end%>
+2024-05-27T14:58:23.479509+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]     9:   </ul>
+2024-05-27T14:58:23.479509+00:00 app[web.1]: [3b69388e-8388-4134-b764-eeacc1a5431a]
+2024-05-27T14:58:23.480592+00:00 heroku[router]: at=info method=GET path="/" host=guarded-beach-44093-9de233ddd10e.herokuapp.com request_id=3b69388e-8388-4134-b764-eeacc1a5431a fwd="206.172.98.210" dyno=web.1 connect=1ms service=53ms status=500 bytes=1891 protocol=https

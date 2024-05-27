@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+a_id = Assignment.create(title: "Mount Rushmore")
+Question.create(ask: "Mt Rushmore first president", answer: "Washington", assignment_id: a_id, score: 1, code: "RUSH1")
+Question.create(ask: "Second Mt Rushmore president", answer: "Lincoln", assignment_id: a_id, score: 1,code: "RUSH2")
