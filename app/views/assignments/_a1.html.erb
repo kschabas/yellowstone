@@ -14,25 +14,25 @@
           <% q_id = Question.where(code: "RUSH1").first.id%>
           <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
           <input type="hidden" name="q_ids[]", value=<%=q_id%>%>
-          <input type="text" name="q_guesses[]", value=<%=@cur_guess%>>
+          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>">
         </div>
         <div id = "rushmore2">
           <% q_id = Question.where(code: "RUSH2").first.id%>
           <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
           <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-          <input type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
+          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
         </div>
         <div id = "rushmore3">
           <% q_id = Question.where(code: "RUSH3").first.id%>
           <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
           <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-          <input type="text" name="q_guesses[]", value=<%=@cur_guess%>>
+          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>">
         </div>
         <div id="rushmore4">
           <% q_id = Question.where(code: "RUSH4").first.id%>
           <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
           <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-          <input type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
+          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
         </div>
       </div>
 
@@ -41,35 +41,35 @@
         <% q_id = Question.where(code: "RUSH5").first.id%>
         <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
         <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
+        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
       </div>
       <div class="rushmore_question">
         <p class="question_label">Who built Mount Rushmore?</p>
         <% q_id = Question.where(code: "RUSH6").first.id%>
         <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
         <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
+        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
       </div>
       <div class="rushmore_question">
         <p class="question_label">Mt. Rushmore is in which set of hills?</p>
         <% q_id = Question.where(code: "RUSH7").first.id%>
         <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
         <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
+        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
       </div>
       <div class="rushmore_question">
         <p class="question_label">Who has the longest nose on Mt. Rushmore?</p>
         <% q_id = Question.where(code: "RUSH8").first.id%>
         <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
         <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
+        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
       </div>
       <div class="rushmore_question">
         <p class="question_label">In 1937, Congress introduced a bill that would have added which woman to Mt. Rushmore?</p>
         <% q_id = Question.where(code: "RUSH9").first.id%>
         <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
         <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value=<%=@cur_guess%>> 
+        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
       </div>
       <%= a_form.submit "Submit" %>
     <%end%>
