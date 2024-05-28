@@ -1,5 +1,5 @@
 body {
-  margin: 0px;  
+  margin: 0px;
 }
 
 ul {
@@ -9,7 +9,6 @@ ul {
 div.regular {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  height: 100vh;
 }
 
 .sidebar {
@@ -40,6 +39,7 @@ div.regular {
 .content {
   grid-column: 2/3;
   padding: 20px;
+  background-color: beige;
 }
 
 h1 {

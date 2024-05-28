@@ -8,6 +8,7 @@ class Submission < ApplicationRecord
     q_guesses.each_with_index do |guess, index|
       cur_guess = Submission.where(user_id: u_id, question_id: q_ids[index])
       if (cur_guess.count == 0)
+        Rails.logger.debug "User id #{u_id}, Questions_id #{q_ids[index]}, Guess #{guess}"
         new_sub=Submission.new
         new_sub.user_id = u_id
         new_sub.question_id = q_ids[index]

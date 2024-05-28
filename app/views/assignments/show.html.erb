@@ -1,4 +1,7 @@
-<h1> <%=@assignment.title%> </h1>
+<%=stylesheet_link_tag "top_level"%>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+</style>
 <%case @assignment.title %>
 <% when "Mount Rushmore"%>
 <%= render "a1", assignment: @assignment %>
