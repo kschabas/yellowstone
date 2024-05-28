@@ -11,67 +11,42 @@
       <p id="president_questions_label">Please give the last name of the 4 presidents, in order from left to right</p>
       <div id="president_questions">
         <div id="rushmore1">
-          <% q_id = Question.where(code: "RUSH1").first.id%>
-          <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-          <input type="hidden" name="q_ids[]", value=<%=q_id%>%>
-          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>">
+          <%= render "printq", q_code: "RUSH1", assignment: assignment %>
         </div>
         <div id = "rushmore2">
-          <% q_id = Question.where(code: "RUSH2").first.id%>
-          <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-          <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
+          <%= render "printq", q_code: "RUSH2", assignment: assignment %>
         </div>
         <div id = "rushmore3">
-          <% q_id = Question.where(code: "RUSH3").first.id%>
-          <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-          <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>">
+          <%= render "printq", q_code: "RUSH3", assignment: assignment %>
         </div>
         <div id="rushmore4">
-          <% q_id = Question.where(code: "RUSH4").first.id%>
-          <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-          <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-          <input type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
+          <%= render "printq", q_code: "RUSH4", assignment: assignment %>
         </div>
       </div>
 
       <div class="rushmore_question">
         <p class="question_label">How many years did it take to build Mt. Rushmore?</p>
-        <% q_id = Question.where(code: "RUSH5").first.id%>
-        <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-        <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
+        <%= render "printq", q_code: "RUSH5", assignment: assignment %>
       </div>
       <div class="rushmore_question">
         <p class="question_label">Who built Mount Rushmore?</p>
-        <% q_id = Question.where(code: "RUSH6").first.id%>
-        <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-        <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
+        <%= render "printq", q_code: "RUSH6", assignment: assignment %>
       </div>
       <div class="rushmore_question">
         <p class="question_label">Mt. Rushmore is in which set of hills?</p>
-        <% q_id = Question.where(code: "RUSH7").first.id%>
-        <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-        <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
+        <%= render "printq", q_code: "RUSH7", assignment: assignment %>
       </div>
       <div class="rushmore_question">
         <p class="question_label">Who has the longest nose on Mt. Rushmore?</p>
-        <% q_id = Question.where(code: "RUSH8").first.id%>
-        <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-        <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
+        <%= render "printq", q_code: "RUSH8", assignment: assignment %>
       </div>
       <div class="rushmore_question">
         <p class="question_label">In 1937, Congress introduced a bill that would have added which woman to Mt. Rushmore?</p>
-        <% q_id = Question.where(code: "RUSH9").first.id%>
-        <%@cur_guess = assignment.return_guess(q_id,current_user.id)%>
-        <input type="hidden" name="q_ids[]", value=<%=q_id%>>
-        <input class="rushmore_input" type="text" name="q_guesses[]", value="<%=@cur_guess%>"> 
+        <%= render "printq", q_code: "RUSH9", assignment: assignment %>
       </div>
-      <%= a_form.submit "Submit" %>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "rushmore_button" %>
+      </div>
     <%end%>
   </div>
 </div>

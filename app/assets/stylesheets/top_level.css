@@ -45,3 +45,8 @@ div.regular {
 h1 {
   margin: 0;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+}

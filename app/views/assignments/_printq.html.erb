@@ -1,0 +1,4 @@
+<% q_id = Question.where(code: q_code).first.id%>
+<%cur_guess = assignment.return_guess(q_id,current_user.id)%>
+<input type="hidden" name="q_ids[]", value=<%=q_id%>%>
+<input type="text" name="q_guesses[]", value="<%=cur_guess%>">
