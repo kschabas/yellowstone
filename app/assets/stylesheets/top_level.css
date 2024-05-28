@@ -50,3 +50,13 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+.correct_question {
+  border-color: green;
+  border-width:  3px;
+}
+
+.incorrect_question {
+  border-color: red;
+  border-width:  3px;
+}

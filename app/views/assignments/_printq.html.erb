@@ -1,4 +1,12 @@
-<% q_id = Question.where(code: q_code).first.id%>
+<% q = Question.where(code: q_code).first%>
+<% q_id = q.id %>
 <%cur_guess = assignment.return_guess(q_id,current_user.id)%>
 <input type="hidden" name="q_ids[]", value=<%=q_id%>%>
-<input type="text" name="q_guesses[]", value="<%=cur_guess%>">
+<% correct = q.match?(cur_guess)%>
+<% if correct %>
+  <input type="text" name="q_guesses[]", value="<%=cur_guess%>", class="correct_question">
+<% elsif !cur_guess.nil?%>
+  <input type="text" name="q_guesses[]", value="<%=cur_guess%>", class="incorrect_question">
+<% else %>
+  <input type="text" name="q_guesses[]", value="<%=cur_guess%>">
+<% end %>
