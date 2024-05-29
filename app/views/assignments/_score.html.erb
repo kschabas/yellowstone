@@ -1,5 +1,7 @@
 <div class="score">
   <%score = 0%>
   <%score += assignment.submissions.where(user_id: current_user.id, correct: true).sum(:score)%>
-  Score: <%=score%>/9
+  <%max_score = 0%>
+  <%max_score += assignment.questions.sum(:score)%>
+  Score: <%=score%>/<%=max_score%>
 </div>
