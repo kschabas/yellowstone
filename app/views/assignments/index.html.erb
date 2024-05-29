@@ -4,7 +4,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 </style>
 <div class="home_page regular">  
-  <%= render "sidebar" , assignments: Assignment.all %>
+  <%= render "shared/sidebar" , assignments: @assignments %>
   <div class="content" id="root_content">
     <h1 id="root_title">Road Trip 2024</h1>
     <h2 id = "root_subtitle">Yellowstone and Beyond</h2>

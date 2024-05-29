@@ -1,4 +1,5 @@
                                   Prefix Verb   URI Pattern                                                                                       Controller#Action
+                              scorecards GET    /scorecards(.:format)                                                                             scorecards#index
                         new_user_session GET    /users/sign_in(.:format)                                                                          devise/sessions#new
                             user_session POST   /users/sign_in(.:format)                                                                          devise/sessions#create
                     destroy_user_session DELETE /users/sign_out(.:format)                                                                         devise/sessions#destroy
@@ -20,7 +21,6 @@
                               assignment GET    /assignments/:id(.:format)                                                                        assignments#show
                                          PATCH  /assignments/:id(.:format)                                                                        assignments#update
                                          PUT    /assignments/:id(.:format)                                                                        assignments#update
-                                    test GET    /assignments/test(.:format)                                                                       assignments#test
         turbo_recede_historical_location GET    /recede_historical_location(.:format)                                                             turbo/native/navigation#recede
         turbo_resume_historical_location GET    /resume_historical_location(.:format)                                                             turbo/native/navigation#resume
        turbo_refresh_historical_location GET    /refresh_historical_location(.:format)                                                            turbo/native/navigation#refresh
