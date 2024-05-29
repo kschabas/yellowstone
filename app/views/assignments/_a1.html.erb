@@ -45,14 +45,10 @@
         <%= render "printq", q_code: "RUSH9", assignment: assignment %>
       </div>
       <div class="center">
-        <%= a_form.submit "Submit", class: "rushmore_button" %>
+        <%= a_form.submit "Submit", class: "submit_button" %>
       </div>
     <%end%>
 
-    <div class="score">
-      <%score = 0%>
-      <%score += assignment.submissions.where(user_id: current_user.id, correct: true).sum(:score)%>
-      Score: <%=score%>/9
-    </div>
+    <%= render "score",assignment: assignment%>
   </div>
 </div>

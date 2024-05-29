@@ -1,0 +1,5 @@
+<div class="score">
+  <%score = 0%>
+  <%score += assignment.submissions.where(user_id: current_user.id, correct: true).sum(:score)%>
+  Score: <%=score%>/9
+</div>
