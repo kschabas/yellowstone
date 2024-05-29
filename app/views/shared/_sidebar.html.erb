@@ -8,8 +8,8 @@
     <%end%>
   </ul>
   <li class="sidebar_list_item"><%= link_to "Diary", assignments_path%></li>
-  <li class="sidebar_list_item"><%= link_to "My Scores", scorecards_path%></li>
-  <li class="sidebar_list_item"><%= link_to "Leaderboard", assignments_path%></li>
+  <li class="sidebar_list_item"><%= link_to "Scorecard", scorecards_path%></li>
+  <li class="sidebar_list_item"><%= link_to "Leaderboard", leaderboard_path%></li>
   <% if user_signed_in? %>
     <li class="sidebar_list_item"><%= link_to "Log Out", destroy_user_session_path, data: {turbo_method: :delete}%></li>
   <% else %>

@@ -1,0 +1,20 @@
+<%=stylesheet_link_tag "top_level"%>
+<%=stylesheet_link_tag "scorecard"%>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+</style>
+<div class = "regular">
+  <%=render "shared/sidebar",assignments: @assignments %>
+  <div class="content">
+    <p class="assignment_title">Leaderboard</p>
+    <div class="score_table">
+      <%total_possible_score = Question.sum(:score)%>
+      <%@users.each do |u|%>
+        <p class="score_table_label"><%=u.name%></p>
+        <% cur_user_qs = u.submissions.where(correct: true)%>
+        <% cur_score = cur_user_qs.sum { |q| q.question.score}%>
+        <p class="score_table_score"><%=cur_score%>/<%=total_possible_score%></p>
+      <%end%>
+    </div>
+  </div>
+</div>

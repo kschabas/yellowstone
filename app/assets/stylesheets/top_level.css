@@ -3,7 +3,7 @@ body {
 }
 
 .content {
-  height: max(100vh,auto);
+  min-height: 100vh;
 }
 
 ul {
@@ -13,6 +13,14 @@ ul {
 div.regular {
   display: grid;
   grid-template-columns: 1fr 4fr;
+}
+
+.assignment_title {
+  margin: auto;
+  text-align: center;
+  font-family: "Poller One", serif;
+  font-size: 50px;
+  color: black;
 }
 
 .sidebar {

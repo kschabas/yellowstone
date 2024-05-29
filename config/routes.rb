@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'scorecards', to: "scorecards#index"
+  
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -11,4 +11,6 @@ Rails.application.routes.draw do
    root "assignments#index"
 
    resources :assignments, only: [:index, :show, :update]
+   get 'scorecards', to: "scorecards#index"
+   get 'leaderboard', to: "scorecards#leaderboard"
 end
