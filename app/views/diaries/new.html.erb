@@ -7,6 +7,7 @@
   <div class="content">
     <p class="assignment_title"><%=current_user.name%>'s Diary</p>
     <%= form_with model: @diary do |form|%>
+      <%=form.hidden_field :user_id, value: current_user.id%>
       <div class="diary_form">
         <%= form.label :date, class: "diary_label", id: "diary_label_date"%>
         <%= form.date_field :date, id: "diary_date"%>
