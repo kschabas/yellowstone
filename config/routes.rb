@@ -11,6 +11,7 @@ Rails.application.routes.draw do
    root "assignments#index"
 
    resources :assignments, only: [:index, :show, :update]
+   resources :diaries
    get 'scorecards', to: "scorecards#index"
    get 'leaderboard', to: "scorecards#leaderboard"
 end

@@ -7,7 +7,7 @@
       <li class="assignment_item"> <%=link_to a.title, a %></li>
     <%end%>
   </ul>
-  <li class="sidebar_list_item"><%= link_to "Diary", assignments_path%></li>
+  <li class="sidebar_list_item"><%= link_to "Diary", diaries_path%></li>
   <li class="sidebar_list_item"><%= link_to "Scorecard", scorecards_path%></li>
   <li class="sidebar_list_item"><%= link_to "Leaderboard", leaderboard_path%></li>
   <% if user_signed_in? %>
