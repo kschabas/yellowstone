@@ -1,10 +1,13 @@
 class DiariesController < ApplicationController
   def index
-    redirect_to new_diary_path
+    @date = Date.today
+    @diary = Diary.find_by_date(@date,current_user.id)
+    render :new
   end
 
   def show
-    redirect_to edit_diary_path
+    @diary = Diary.find(params[:id])
+    render :new
   end
 
   def edit
@@ -13,15 +16,7 @@ class DiariesController < ApplicationController
   end
 
   def new
-    @date = Date.today
-    entry = Diary.where(user_id: current_user.id, date: @date)
-    if  entry.count == 0
-      @diary = Diary.new
-      @diary.date = @date
-    else
-      @diary = entry.first
-    end
-    
+    @diary = Diary.find_by_date(params[:date],current_user.id)
   end
 
   def create

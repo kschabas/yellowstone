@@ -23,3 +23,13 @@
     </div>
   </div>
 </div>
+
+<script defer>
+  var date_field = document.querySelector("#diary_date");
+  date_field.addEventListener('change', (e) => ProcessDate());
+
+  function ProcessDate() {
+    var date = document.querySelector("#diary_date").value;
+    window.location.href = `<%=new_diary_path%>?date=${date}`;
+  }
+</script>
