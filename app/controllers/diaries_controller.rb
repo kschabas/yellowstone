@@ -1,4 +1,6 @@
 class DiariesController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @date = Date.today
     @diary = Diary.find_by_date(@date,current_user.id)
