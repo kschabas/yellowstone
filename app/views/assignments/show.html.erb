@@ -5,6 +5,8 @@
 <%case @assignment.title %>
 <% when "Mount Rushmore"%>
 <%= render "a1", assignment: @assignment %>
+<% when "State The State"%>
+<%= render "a2", assignment: @assignment %>
 <% else %>
   <div>No valid assignment Found!</div>
 <%end%>

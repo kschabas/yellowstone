@@ -1,0 +1,30 @@
+#states_img {
+  content: url(States_of_the_USA_by_numbers.svg);
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.state_question {
+  display: grid;
+  grid-template-columns: 100px 300px 100px;
+  justify-content: left;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.state_label {
+  font-size: 30px;
+}
+
+.state_question input {
+  height: 20px;
+  padding: 10px;
+}
+
+.state_num input {
+  width: 30px;
+}

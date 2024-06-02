@@ -1,0 +1,29 @@
+
+<div class="state regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >State the State</h1>
+
+    <img id="states_img">
+    
+    <p class="state_label">Please enter each state and the correct number for that state on the map. Each state must be entered in the order visited on the trip. No duplicates!</p>
+    <%= form_with model: assignment do |a_form|%>
+
+      <div class="state_question">
+        <p class="state_label">Order Visited</p>
+        <p class="state_label">State Name</p>
+        <p class="state_label">State Number</p>
+        <%for num in 1..12 do%>
+          <p class="state_label"><%=num%></p>
+          <%= render "printq",q_code: "STATE#{num}",assignment: assignment%>
+          <p class="state_num"><%= render "printq",q_code: "STATENUM#{num}",assignment: assignment%></p>
+        <%end%>
+      </div>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <%end%>
+
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>
