@@ -11,7 +11,7 @@
       <%total_score = 0%>
       <%total_possible_score = 0%>
       <%@assignments.each do |a|%>
-        <p class="score_table_label"><%=a.title%></p>
+        <p class="score_table_label"><%=link_to a.title, a%></p>
         <% cur_score = a.submissions.where(user_id: current_user.id, correct: true).sum(:score)%>
         <% cur_possible_score = a.questions.sum(:score)%>
         <p class="score_table_score"><%=cur_score%>/<%=cur_possible_score%></p>

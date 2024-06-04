@@ -9,11 +9,16 @@
     <p class="assignment_title">Leaderboard</p>
     <div class="score_table">
       <%total_possible_score = Question.sum(:score)%>
+      <%scoreboard = {}%>
       <%@users.each do |u|%>
-        <p class="score_table_label"><%=u.name%></p>
         <% cur_user_qs = u.submissions.where(correct: true)%>
         <% cur_score = cur_user_qs.sum { |q| q.question.score}%>
-        <p class="score_table_score"><%=cur_score%>/<%=total_possible_score%></p>
+        <%scoreboard[u.name] = cur_score%>
+      <%end%>
+      <%scoreboard =  scoreboard.sort_by { |key, val| val}.reverse! %>
+      <%scoreboard.each do |s|%>
+        <p class="score_table_label"><%=s[0]%></p>
+        <p class="score_table_score"><%=s[1]%>/<%=total_possible_score%></p>
       <%end%>
     </div>
   </div>
