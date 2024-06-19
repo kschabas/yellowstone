@@ -1,0 +1,45 @@
+
+<div class="devil regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Devils Tower</h1>
+
+    <img id="devils_img">
+    
+    <%= form_with model: assignment do |a_form|%>
+      <div class="general_question">
+        <p class="question_label">From base to summit, how tall is devils tower (in feet)?</p>
+        <%= render "printq", q_code: "DEVIL1", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">What word, meaning an isolated hill with steep sides and a flat summit, is often used to describe Devils Tower?</p>
+        <%= render "printq", q_code: "DEVIL2", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">What mountain range is devils Tower part of?</p>
+        <%= render "printq", q_code: "DEVIL3", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">What river flows through Devils Tower?</p>
+        <%= render "printq", q_code: "DEVIL4", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">What animal, common around Devils Towers, is named like a canine but is actually a type of squirrel?</p>
+        <%= render "printq", q_code: "DEVIL5", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">Which president declared Devils Tower a national monument?</p>
+        <%= render "printq", q_code: "DEVIL6", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">What type of rock is Devils Tower made of (sedimentary, igneous or metamorphic)?</p>
+        <%= render "printq", q_code: "DEVIL7", assignment: assignment %>
+      </div>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <%end%>
+
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>

@@ -22,7 +22,6 @@ Question.create(ask: "Who built Mount Rushmore?", answer: "Borglum", assignment_
 Question.create(ask: "Mt. Rushmore is in which set of hills?", answer: "Black", assignment_id: a.id, score: 1,code: "RUSH7")
 Question.create(ask: "Who has the longest nose on Mt. Rushmore?", answer: "Washington", assignment_id: a.id, score: 1,code: "RUSH8")
 Question.create(ask: "in 1937, Congress introduced a bill that would have added which woman to Mt. Rushmore?", answer: "Anthony", assignment_id: a.id, score: 1,code: "RUSH9")
-=end
 
 a = Assignment.create(title: "State The State")
 Question.create(ask: "State #1", answer: "Michigan", assignment_id: a.id, score: 1, code: "STATE1")
@@ -49,3 +48,13 @@ Question.create(ask: "State #11", answer: "Kansas", assignment_id: a.id, score: 
 Question.create(ask: "State Num #11", answer: "16", assignment_id: a.id, score: 1, code: "STATENUM11")
 Question.create(ask: "State #12", answer: "Missouri", assignment_id: a.id, score: 1, code: "STATE12")
 Question.create(ask: "State Num #12", answer: "25", assignment_id: a.id, score: 1, code: "STATENUM12")
+=end
+
+a = Assignment.create(title: "Devils Tower")
+Question.create(ask: "Devil 1", answer: "867", assignment_id: a.id, score: 1, code: "DEVIL1")
+Question.create(ask: "Devil 2", answer: "butte", assignment_id: a.id, score: 1, code: "DEVIL2")
+Question.create(ask: "Devil 3", answer: "Bear Lodge", assignment_id: a.id, score: 1, code: "DEVIL3")
+Question.create(ask: "Devil 4", answer: "Belle Fourche", assignment_id: a.id, score: 1, code: "DEVIL4")
+Question.create(ask: "Devil 5", answer: "prairie dog", assignment_id: a.id, score: 1, code: "DEVIL5")
+Question.create(ask: "Devil 6", answer: "Roosevelt", assignment_id: a.id, score: 1, code: "DEVIL6")
+Question.create(ask: "Devil 7", answer: "igneous", assignment_id: a.id, score: 1, code: "DEVIL7")

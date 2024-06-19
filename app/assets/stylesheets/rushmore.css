@@ -27,7 +27,7 @@
   flex: 1 1 0;
 }
 
-.rushmore_question {
+.rushmore_question, .general_question {
   display:flex;
   justify-content: left;
   padding: 10px;

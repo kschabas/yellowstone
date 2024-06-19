@@ -1,0 +1,9 @@
+#devils_img {
+  content: url(devils.jpg);
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
