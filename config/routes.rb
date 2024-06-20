@@ -14,4 +14,5 @@ Rails.application.routes.draw do
    resources :diaries
    get 'scorecards', to: "scorecards#index"
    get 'leaderboard', to: "scorecards#leaderboard"
+   get 'map', to: "scorecards#map"
 end

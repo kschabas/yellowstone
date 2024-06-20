@@ -8,4 +8,8 @@ class ScorecardsController < ApplicationController
     @users = User.all
     @assignments = Assignment.all
   end
+
+  def map
+    @assignments = Assignment.all
+  end
 end
