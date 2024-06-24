@@ -1,0 +1,70 @@
+.wildlife_question {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+}
+
+.wildlife_img {
+  width: 100px;
+}
+
+#bear_img {
+  content: url(Bear.jpg);
+}
+
+#goat_img {
+  content: url(goat.avif);
+}
+
+#elk_img {
+  content: url(elk.jpg);
+}
+
+#fox_img {
+  content: url(fox.jpg);
+}
+
+#bison_img {
+  content: url(bison.jpg);
+}
+
+#cougar_img {
+  content: url(cougar.jpg);
+}
+
+#sheep_img {
+  content: url(sheep.JPG);
+}
+
+#eagle_img {
+  content: url(eagle.png);
+}
+
+#moose_img {
+  content: url(moose.jpg);
+}
+
+#beaver_img {
+  content: url(beaver.jpg);
+}
+
+#bobcat_img {
+  content: url(bobcat.jpg);
+}
+
+#wolf_img {
+  content: url(wolf.jpg);
+}
+
+#deer_img {
+  content: url(deer.jpg);
+}
+
+#pronghorn_img {
+  content: url(pronghorn.jpg);
+}
+
+.wild_question_text {
+  align-self: center;
+  height: 30px;
+}

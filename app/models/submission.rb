@@ -2,8 +2,6 @@ class Submission < ApplicationRecord
   belongs_to :user
   belongs_to :question
 
-  validates :guess, presence: true
-
   def add_guesses(q_guesses,q_ids,u_id)
     q_guesses.each_with_index do |guess, index|
       cur_guess = Submission.where(user_id: u_id, question_id: q_ids[index])

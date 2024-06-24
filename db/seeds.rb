@@ -48,7 +48,6 @@ Question.create(ask: "State #11", answer: "Kansas", assignment_id: a.id, score: 
 Question.create(ask: "State Num #11", answer: "16", assignment_id: a.id, score: 1, code: "STATENUM11")
 Question.create(ask: "State #12", answer: "Missouri", assignment_id: a.id, score: 1, code: "STATE12")
 Question.create(ask: "State Num #12", answer: "25", assignment_id: a.id, score: 1, code: "STATENUM12")
-=end
 
 a = Assignment.create(title: "Devils Tower")
 Question.create(ask: "Devil 1", answer: "867", assignment_id: a.id, score: 1, code: "DEVIL1")
@@ -58,3 +57,21 @@ Question.create(ask: "Devil 4", answer: "Belle Fourche", assignment_id: a.id, sc
 Question.create(ask: "Devil 5", answer: "prairie dog", assignment_id: a.id, score: 1, code: "DEVIL5")
 Question.create(ask: "Devil 6", answer: "Roosevelt", assignment_id: a.id, score: 1, code: "DEVIL6")
 Question.create(ask: "Devil 7", answer: "igneous", assignment_id: a.id, score: 1, code: "DEVIL7")
+=end
+
+a = Assignment.create(title: "Yellowstone Wildlife")
+Question.create(ask: "Bear", answer: "", assignment_id: a.id, score: 1, code: "WILD1")
+Question.create(ask: "Goat", answer: "", assignment_id: a.id, score: 1, code: "WILD2")
+Question.create(ask: "Elk", answer: "", assignment_id: a.id, score: 1, code: "WILD3")
+Question.create(ask: "Fox", answer: "", assignment_id: a.id, score: 1, code: "WILD4")
+Question.create(ask: "Bison", answer: "", assignment_id: a.id, score: 1, code: "WILD5")
+Question.create(ask: "Cougar", answer: "", assignment_id: a.id, score: 1, code: "WILD6")
+Question.create(ask: "Sheep", answer: "", assignment_id: a.id, score: 1, code: "WILD7")
+Question.create(ask: "Eagle", answer: "", assignment_id: a.id, score: 1, code: "WILD8")
+Question.create(ask: "Moose", answer: "", assignment_id: a.id, score: 1, code: "WILD9")
+Question.create(ask: "Beaver", answer: "", assignment_id: a.id, score: 1, code: "WILD10")
+Question.create(ask: "Bobcat", answer: "", assignment_id: a.id, score: 1, code: "WILD11")
+Question.create(ask: "Wolf", answer: "", assignment_id: a.id, score: 1, code: "WILD12")
+Question.create(ask: "Deer", answer: "", assignment_id: a.id, score: 1, code: "WILD13")
+Question.create(ask: "Pronghorn", answer: "", assignment_id: a.id, score: 1, code: "WILD14")
+

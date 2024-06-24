@@ -6,6 +6,10 @@ class Question < ApplicationRecord
     if guess.nil?
       return false
     end
+    if (self.answer== "")
+      return true unless guess == ""
+      return false
+    end
     guess.downcase.include?(self.answer.downcase)
   end
 

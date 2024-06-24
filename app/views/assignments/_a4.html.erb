@@ -1,0 +1,114 @@
+
+<div class="regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Yellowstone Wildlife</h1>
+    <h2 class="center">For each animal spotted, please enter the location seen.</h2>
+   
+    <%= form_with model: assignment do |a_form|%>
+      <div class="wildlife_question">
+        <p class="question_label">Bear</p>
+        <img id="bear_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD1", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Mountain Goat</p>
+        <img id="goat_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD2", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Elk</p>
+        <img id="elk_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD3", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Fox</p>
+        <img id="fox_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD4", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Bison</p>
+        <img id="bison_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD5", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Cougar</p>
+        <img id="cougar_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD6", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Bighorn Sheep</p>
+        <img id="sheep_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD7", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Eagle</p>
+        <img id="eagle_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD8", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Moose</p>
+        <img id="moose_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD9", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Beaver</p>
+        <img id="beaver_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD10", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Bobcat</p>
+        <img id="bobcat_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD11", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Wolf</p>
+        <img id="wolf_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD12", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Deer</p>
+        <img id="deer_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD13", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Pronghorn</p>
+        <img id="pronghorn_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WILD14", assignment: assignment %>
+        </div>
+      </div>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <% end %>
+    
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>
