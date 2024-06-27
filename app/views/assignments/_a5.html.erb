@@ -1,0 +1,54 @@
+
+<div class="geyser regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Some Like It Hot!</h1>
+    <h2 class="center">Enter the name of the geyser that best fits the given description</h2>
+
+    <img id="geyser_img">
+    
+    <%= form_with model: assignment do |a_form|%>
+      <div class="general_question">
+        <p class="question_label">The most famous geyser in Yellowstone, this geyser erupts reliably every 30-120 minutes.</p>
+        <%= render "printq", q_code: "GEYS1", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This oldest geyser in Yellowstone is name after a type of medieval building.</p>
+        <%= render "printq", q_code: "GEYS2", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This geyser is named after a place you cut wood.</p>
+        <%= render "printq", q_code: "GEYS3", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This name is also a type of piano, or a word before parent.</p>
+        <%= render "printq", q_code: "GEYS4", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This geyser, often dormant for decades, is named after a large fictional creature.</p>
+        <%= render "printq", q_code: "GEYS5", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This geyser has the same name as a path you might walk on near some water.</p>
+        <%= render "printq", q_code: "GEYS6", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This pool has a name meaning something wonderful around dawn.</p>
+        <%= render "printq", q_code: "GEYS7", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This geyser has the same name as a common flower.</p>
+        <%= render "printq", q_code: "GEYS8", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This geyser has the same name as an object you would find in space.</p>
+        <%= render "printq", q_code: "GEYS9", assignment: assignment %>
+      </div>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <%end%>
+
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>

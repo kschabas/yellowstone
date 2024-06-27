@@ -57,7 +57,6 @@ Question.create(ask: "Devil 4", answer: "Belle Fourche", assignment_id: a.id, sc
 Question.create(ask: "Devil 5", answer: "prairie dog", assignment_id: a.id, score: 1, code: "DEVIL5")
 Question.create(ask: "Devil 6", answer: "Roosevelt", assignment_id: a.id, score: 1, code: "DEVIL6")
 Question.create(ask: "Devil 7", answer: "igneous", assignment_id: a.id, score: 1, code: "DEVIL7")
-=end
 
 a = Assignment.create(title: "Yellowstone Wildlife")
 Question.create(ask: "Bear", answer: "", assignment_id: a.id, score: 1, code: "WILD1")
@@ -74,4 +73,15 @@ Question.create(ask: "Bobcat", answer: "", assignment_id: a.id, score: 1, code: 
 Question.create(ask: "Wolf", answer: "", assignment_id: a.id, score: 1, code: "WILD12")
 Question.create(ask: "Deer", answer: "", assignment_id: a.id, score: 1, code: "WILD13")
 Question.create(ask: "Pronghorn", answer: "", assignment_id: a.id, score: 1, code: "WILD14")
+=end
 
+a = Assignment.create(title: "Some Like It Hot!")
+Question.create(ask: "Old Faithful", answer: "Old Faithful", assignment_id: a.id, score: 1, code: "GEYS1")
+Question.create(ask: "Castle", answer: "castle", assignment_id: a.id, score: 1, code: "GEYS2")
+Question.create(ask: "Sawmill", answer: "sawmill", assignment_id: a.id, score: 1, code: "GEYS3")
+Question.create(ask: "grand", answer: "grand", assignment_id: a.id, score: 1, code: "GEYS4")
+Question.create(ask: "giant", answer: "giant", assignment_id: a.id, score: 1, code: "GEYS5")
+Question.create(ask: "riverside", answer: "riverside", assignment_id: a.id, score: 1, code: "GEYS6")
+Question.create(ask: "morning glory", answer: "morning glory", assignment_id: a.id, score: 1, code: "GEYS7")
+Question.create(ask: "daisy", answer: "daisy", assignment_id: a.id, score: 1, code: "GEYS8")
+Question.create(ask: "comet", answer: "comet", assignment_id: a.id, score: 1, code: "GEYS9")
