@@ -1,0 +1,66 @@
+
+<div class="fort regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Fort Yellowstone</h1>
+    <h2 class="center">For each numbered building, enter the building's name</h2>
+
+    <img id="fort_img">
+    
+    <%= form_with model: assignment do |a_form|%>
+      <div class="fort_question">
+        <p class="fort_label">1.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT1", assignment: assignment %>
+        </p>
+      </div>
+     <div class="fort_question">
+        <p class="fort_label">2.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT2", assignment: assignment %>
+        </p>
+      </div>
+     <div class="fort_question">
+        <p class="fort_label">3.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT3", assignment: assignment %>
+        </p>
+      </div>
+      <div class="fort_question">
+        <p class="fort_label">4.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT4", assignment: assignment %>
+        </p>
+      </div>
+      <div class="fort_question">
+        <p class="fort_label">5.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT5", assignment: assignment %>
+        </p>
+      </div>
+      <div class="fort_question">
+        <p class="fort_label">6.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT6", assignment: assignment %>
+        </p>
+      </div>
+      <div class="fort_question">
+        <p class="fort_label">7.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT7", assignment: assignment %>
+        </p>
+      </div>
+      <div class="fort_question">
+        <p class="fort_label">8.</p>
+        <p class="fort_answer">
+        <%= render "printq", q_code: "FORT8", assignment: assignment %>
+        </p>
+      </div>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <%end%>
+
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>

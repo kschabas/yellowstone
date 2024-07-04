@@ -73,7 +73,6 @@ Question.create(ask: "Bobcat", answer: "", assignment_id: a.id, score: 1, code: 
 Question.create(ask: "Wolf", answer: "", assignment_id: a.id, score: 1, code: "WILD12")
 Question.create(ask: "Deer", answer: "", assignment_id: a.id, score: 1, code: "WILD13")
 Question.create(ask: "Pronghorn", answer: "", assignment_id: a.id, score: 1, code: "WILD14")
-=end
 
 a = Assignment.create(title: "Some Like It Hot!")
 Question.create(ask: "Old Faithful", answer: "Old Faithful", assignment_id: a.id, score: 1, code: "GEYS1")
@@ -85,3 +84,14 @@ Question.create(ask: "riverside", answer: "riverside", assignment_id: a.id, scor
 Question.create(ask: "morning glory", answer: "morning glory", assignment_id: a.id, score: 1, code: "GEYS7")
 Question.create(ask: "daisy", answer: "daisy", assignment_id: a.id, score: 1, code: "GEYS8")
 Question.create(ask: "comet", answer: "comet", assignment_id: a.id, score: 1, code: "GEYS9")
+=end
+
+a = Assignment.create(title: "Fort Yellowstone")
+Question.create(ask: "1", answer: "stable", assignment_id: a.id, score: 1, code: "FORT1")
+Question.create(ask: "2", answer: "blacksmith", assignment_id: a.id, score: 1, code: "FORT2")
+Question.create(ask: "3", answer: "barrack", assignment_id: a.id, score: 1, code: "FORT3")
+Question.create(ask: "4", answer: "captain", assignment_id: a.id, score: 1, code: "FORT4")
+Question.create(ask: "5", answer: "post", assignment_id: a.id, score: 1, code: "FORT5")
+Question.create(ask: "6", answer: "storehouse", assignment_id: a.id, score: 1, code: "FORT6")
+Question.create(ask: "7", answer: "granary", assignment_id: a.id, score: 1, code: "FORT7")
+Question.create(ask: "8", answer: "hospital", assignment_id: a.id, score: 1, code: "FORT8")

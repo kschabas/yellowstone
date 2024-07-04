@@ -47,6 +47,10 @@ div.regular {
   color: white;
 }
 
+.assignment_item {
+  padding: 2px;
+}
+
 
 .content {
   grid-column: 2/3;

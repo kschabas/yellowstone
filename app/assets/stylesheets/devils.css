@@ -17,3 +17,30 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+#fort_img {
+  content: url(fortyellowstone.jpg);
+  height: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fort_question {
+  display:flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center; 
+}
+
+.fort_label {
+  font-size: 30px;
+  margin: auto;
+  flex: 1 1 0;
+}
+
+.fort_answer {
+  flex: 1 1 0;
+}
