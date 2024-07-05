@@ -1,0 +1,54 @@
+
+<div class="mammoth regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Mammoth Hot Springs</h1>
+    <h2 class="center">Enter the name of the geographic feature that best fits the given description</h2>
+
+    <img id="mammoth_img">
+    
+    <%= form_with model: assignment do |a_form|%>
+      <div class="general_question">
+        <p class="question_label">This hot spring is named after a body part of someone evil.</p>
+        <%= render "printq", q_code: "MAMMOTH1", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This is named after something a painter might use.</p>
+        <%= render "printq", q_code: "MAMMOTH2", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This is named after a recent colour.</p>
+        <%= render "printq", q_code: "MAMMOTH3", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This feature is named after the Roman god of love.</p>
+        <%= render "printq", q_code: "MAMMOTH4", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This name is an adjective that would describe a field</p>
+        <%= render "printq", q_code: "MAMMOTH5", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This feature is named after a famous Egyptian.</p>
+        <%= render "printq", q_code: "MAMMOTH6", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This feature is named after a Greek nymph or nature spirit.</p>
+        <%= render "printq", q_code: "MAMMOTH7", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This is named after a yellow bird.</p>
+        <%= render "printq", q_code: "MAMMOTH8", assignment: assignment %>
+      </div>
+      <div class="general_question">
+        <p class="question_label">This feature is named after a planet.</p>
+        <%= render "printq", q_code: "MAMMOTH9", assignment: assignment %>
+      </div>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <%end%>
+
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>

@@ -84,7 +84,6 @@ Question.create(ask: "riverside", answer: "riverside", assignment_id: a.id, scor
 Question.create(ask: "morning glory", answer: "morning glory", assignment_id: a.id, score: 1, code: "GEYS7")
 Question.create(ask: "daisy", answer: "daisy", assignment_id: a.id, score: 1, code: "GEYS8")
 Question.create(ask: "comet", answer: "comet", assignment_id: a.id, score: 1, code: "GEYS9")
-=end
 
 a = Assignment.create(title: "Fort Yellowstone")
 Question.create(ask: "1", answer: "stable", assignment_id: a.id, score: 1, code: "FORT1")
@@ -95,3 +94,15 @@ Question.create(ask: "5", answer: "post", assignment_id: a.id, score: 1, code: "
 Question.create(ask: "6", answer: "storehouse", assignment_id: a.id, score: 1, code: "FORT6")
 Question.create(ask: "7", answer: "granary", assignment_id: a.id, score: 1, code: "FORT7")
 Question.create(ask: "8", answer: "hospital", assignment_id: a.id, score: 1, code: "FORT8")
+=end
+
+a = Assignment.create(title: "Mammoth Hot Springs")
+Question.create(ask: "Devil", answer: "thumb", assignment_id: a.id, score: 1, code: "MAMMOTH1")
+Question.create(ask: "Palette", answer: "palette", assignment_id: a.id, score: 1, code: "MAMMOTH2")
+Question.create(ask: "New Blue", answer: "new blue", assignment_id: a.id, score: 1, code: "MAMMOTH3")
+Question.create(ask: "Cupid", answer: "cupid", assignment_id: a.id, score: 1, code: "MAMMOTH4")
+Question.create(ask: "Grassy", answer: "grassy", assignment_id: a.id, score: 1, code: "MAMMOTH5")
+Question.create(ask: "Cleopatra", answer: "cleopatra", assignment_id: a.id, score: 1, code: "MAMMOTH6")
+Question.create(ask: "dryad", answer: "dryad", assignment_id: a.id, score: 1, code: "MAMMOTH7")
+Question.create(ask: "canary", answer: "canary", assignment_id: a.id, score: 1, code: "MAMMOTH8")
+Question.create(ask: "jupiter", answer: "jupiter", assignment_id: a.id, score: 1, code: "MAMMOTH9")
