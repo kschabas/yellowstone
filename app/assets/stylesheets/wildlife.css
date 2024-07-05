@@ -4,6 +4,12 @@
   padding: 20px;
 }
 
+.teton_question {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
 .wildlife_img {
   width: 100px;
 }

@@ -1,0 +1,142 @@
+
+<div class="regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Grand Teton Scavenger Hunt</h1>
+    <h2 class="center">For each item spotted, please enter the location seen.</h2>
+    <img id="teton_img">
+    <%= form_with model: assignment do |a_form|%>
+      <div class="teton_question">
+        <p class="question_label">Jenny Lake</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON1", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Hidden Falls</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON2", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Moulton Barn</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON3", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Teton Mountain Range</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON4", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Snake River</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON5", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Sagebrush</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON6", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Pine cone</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON7", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Meadow of Wildflowers</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON8", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Schwabacher's Landing</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON9", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Log Fence</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON10", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Park Ranger</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON11", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Lake Dock</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON12", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Dornan's Teepee</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON13", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Jackson Lake</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON14", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Chapel of the Transfiguration</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON15", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Willow Flats</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON16", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Signal Mountain View</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON17", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Beaver Dam</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON18", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Sunset</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON19", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Chapel of the Sacred Heart</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON20", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Yellow Wildflowers</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "TETON21", assignment: assignment %>
+        </div>
+      </div>
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <% end %>
+    
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>

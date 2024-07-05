@@ -28,6 +28,16 @@
   margin-left: auto;
 }
 
+#teton_img {
+  content: url(GrandTeton.jpg);
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #fort_img {
   content: url(fortyellowstone.jpg);
   height: 800px;
