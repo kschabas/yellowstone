@@ -70,6 +70,32 @@
   content: url(pronghorn.jpg);
 }
 
+#allosaurus_img {
+  content: url(allosaurus.jpg);
+}
+
+#apatosaurus_img {
+  content: url(apatosaurus.jpg);
+}
+
+#camarasaurus_img {
+  content: url(Camarasaurus.jpg);
+}
+#diplodocus_img {
+  content: url(diplodocus.jpg);
+}
+#stegosaurus_img {
+  content: url(Stegosaurus.jpg);
+}
+#barosaurus_img {
+  content: url(Barosaurus.jpg);
+}
+#ceratosaurus_img {
+  content: url(ceratosaurus.jpg);
+}
+#torvosaurus_img {
+  content: url(torvosaurus.webp);
+}
 .wild_question_text {
   align-self: center;
   height: 30px;

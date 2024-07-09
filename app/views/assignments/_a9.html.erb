@@ -1,0 +1,73 @@
+
+<div class="regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Dinosaur National Monument</h1>
+    <h2 class="center">Find a fossil for the given dinosaur. Then write its location</h2>
+   
+    <%= form_with model: assignment do |a_form|%>
+      <div class="wildlife_question">
+        <p class="question_label">Allosaurus</p>
+        <img id="allosaurus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO1", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Apatosaurus</p>
+        <img id="apatosaurus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO2", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Camarasaurus</p>
+        <img id="camarasaurus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO3", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Diplodocus</p>
+        <img id="diplodocus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO4", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Stegosaurus</p>
+        <img id="stegosaurus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO5", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Barosaurus</p>
+        <img id="barosaurus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO6", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Ceratosaurus</p>
+        <img id="ceratosaurus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO7", assignment: assignment %>
+        </div>
+      </div>
+      <div class="wildlife_question">
+        <p class="question_label">Torvosaurus</p>
+        <img id="torvosaurus_img" class="wildlife_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "DINO8", assignment: assignment %>
+        </div>
+      </div>
+      
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <% end %>
+    
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>

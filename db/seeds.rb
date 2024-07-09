@@ -105,7 +105,6 @@ Question.create(ask: "Cleopatra", answer: "cleopatra", assignment_id: a.id, scor
 Question.create(ask: "dryad", answer: "dryad", assignment_id: a.id, score: 1, code: "MAMMOTH7")
 Question.create(ask: "canary", answer: "canary", assignment_id: a.id, score: 1, code: "MAMMOTH8")
 Question.create(ask: "jupiter", answer: "jupiter", assignment_id: a.id, score: 1, code: "MAMMOTH9")
-=end
 
 a = Assignment.create(title: "Grand Teton Scavenger Hunt")
 Question.create(ask: "Jenny lake", answer: "", assignment_id: a.id, score: 1, code: "TETON1")
@@ -129,3 +128,14 @@ Question.create(ask: "Beaver Dam", answer: "", assignment_id: a.id, score: 1, co
 Question.create(ask: "Sunset", answer: "", assignment_id: a.id, score: 1, code: "TETON19")
 Question.create(ask: "Chapel of the Sacred Heart", answer: "", assignment_id: a.id, score: 1, code: "TETON20")
 Question.create(ask: "Yellow Wildflowers", answer: "", assignment_id: a.id, score: 1, code: "TETON21")
+=end
+
+a = Assignment.create(title: "Dinosaur National Monument")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO1")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO2")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO3")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO4")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO5")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO6")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO7")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO8")
