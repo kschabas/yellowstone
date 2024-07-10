@@ -128,7 +128,6 @@ Question.create(ask: "Beaver Dam", answer: "", assignment_id: a.id, score: 1, co
 Question.create(ask: "Sunset", answer: "", assignment_id: a.id, score: 1, code: "TETON19")
 Question.create(ask: "Chapel of the Sacred Heart", answer: "", assignment_id: a.id, score: 1, code: "TETON20")
 Question.create(ask: "Yellow Wildflowers", answer: "", assignment_id: a.id, score: 1, code: "TETON21")
-=end
 
 a = Assignment.create(title: "Dinosaur National Monument")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO1")
@@ -139,3 +138,15 @@ Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO5
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO6")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO7")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO8")
+=end
+
+a = Assignment.create(title: "We're Off To See the Wizard!")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ1")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ2")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ3")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ4")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ5")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ6")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ7")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ8")
+Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ9")

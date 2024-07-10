@@ -1,0 +1,71 @@
+
+<div class="regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >We're Off To See The Wizard!</h1>
+    <h2 class="center">Can you find the following items? Enter the room in which they are found</h2>
+    <img id="wizard_img">
+    <%= form_with model: assignment do |a_form|%>
+      <div class="teton_question">
+        <p class="question_label">Ruby Slippers</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ1", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Haunted Forest Sign</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ2", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Door from a munchkin house</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ3", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Illustrated pages from the 1st edition Wizard of Oz book</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ4", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Flying monkey minatures</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ5", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Auntie Em autograph</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ6", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Death certificate signed by the munchkin coroner</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ7", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Scarecrow's Passport</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ8", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <p class="question_label">Yellow Brick</p>
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "WIZ9", assignment: assignment %>
+        </div>
+      </div>
+
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <% end %>
+    
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>

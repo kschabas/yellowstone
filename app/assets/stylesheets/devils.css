@@ -48,6 +48,16 @@
   margin-left: auto;
 }
 
+#wizard_img {
+  content: url(wizard.webp);
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .fort_question {
   display:flex;
   justify-content: center;
