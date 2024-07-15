@@ -138,7 +138,6 @@ Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO5
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO6")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO7")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "DINO8")
-=end
 
 a = Assignment.create(title: "We're Off To See the Wizard!")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ1")
@@ -150,3 +149,16 @@ Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ6"
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ7")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ8")
 Question.create(ask: "", answer: "", assignment_id: a.id, score: 1, code: "WIZ9")
+=end
+
+a = Assignment.create(title: "Art Time!")
+Question.create(ask: "wood", answer: "wood", assignment_id: a.id, score: 1, code: "ART1")
+Question.create(ask: "seurat", answer: "seurat", assignment_id: a.id, score: 1, code: "ART2")
+Question.create(ask: "hopper", answer: "hopper", assignment_id: a.id, score: 1, code: "ART3")
+Question.create(ask: "picasso", answer: "picasso", assignment_id: a.id, score: 1, code: "ART4")
+Question.create(ask: "vangogh", answer: "van gogh", assignment_id: a.id, score: 1, code: "ART5")
+Question.create(ask: "renoir", answer: "renoir", assignment_id: a.id, score: 1, code: "ART6")
+Question.create(ask: "gris", answer: "gris", assignment_id: a.id, score: 1, code: "ART7")
+Question.create(ask: "monet", answer: "monet", assignment_id: a.id, score: 1, code: "ART8")
+Question.create(ask: "cezanne", answer: "cezanne", assignment_id: a.id, score: 1, code: "ART9")
+Question.create(ask: "chagall", answer: "chagall", assignment_id: a.id, score: 1, code: "ART10")

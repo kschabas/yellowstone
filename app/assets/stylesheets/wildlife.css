@@ -14,6 +14,10 @@
   width: 100px;
 }
 
+.art_img {
+  width: 250px;
+}
+
 #bear_img {
   content: url(Bear.jpg);
 }
@@ -96,6 +100,38 @@
 #torvosaurus_img {
   content: url(torvosaurus.webp);
 }
+
+#wood_img {
+  content: url(wood.jpg);
+}
+#seurat_img {
+  content: url(seurat.jpg);
+}
+#hopper_img {
+  content: url(hopper.jpg);
+}
+#picasso_img {
+  content: url(picasso.jpg);
+}
+#vangogh_img {
+  content: url(vangogh.jpg);
+}
+#renoir_img {
+  content: url(renoir.jpg);
+}
+#gris_img {
+  content: url(gris.jpg);
+}
+#monet_img {
+  content: url(monet.jpg);
+}
+#cezanne_img {
+  content: url(cezanne.jpg);
+}
+#chagall_img {
+  content: url(chagall.jpg);
+}
+
 .wild_question_text {
   align-self: center;
   height: 30px;

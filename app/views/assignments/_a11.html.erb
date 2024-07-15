@@ -1,0 +1,76 @@
+
+<div class="regular">
+  <%= render "shared/sidebar" , assignments: Assignment.all %>
+  <div class="content">
+    <h1 class="assignment_title" >Art Time!</h1>
+    <h2 class="center">For each work of art seen, please enter the last name of the artist. These can all be found at the Chicago Art Institute</h2>
+    <%= form_with model: assignment do |a_form|%>
+      <div class="teton_question">
+        <img id="wood_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART1", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="seurat_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART2", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="hopper_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART3", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="picasso_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART4", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="vangogh_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART5", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="renoir_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART6", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="gris_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART7", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="monet_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART8", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="cezanne_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART9", assignment: assignment %>
+        </div>
+      </div>
+      <div class="teton_question">
+        <img id="chagall_img" class="art_img">
+        <div class="wild_question_text">
+          <%= render "printq", q_code: "ART10", assignment: assignment %>
+        </div>
+      </div>
+
+      <div class="center">
+        <%= a_form.submit "Submit", class: "submit_button" %>
+      </div>
+    <% end %>
+    
+    <%= render "score",assignment: assignment%>
+  </div>
+</div>
