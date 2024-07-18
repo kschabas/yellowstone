@@ -15,4 +15,5 @@ Rails.application.routes.draw do
    get 'scorecards', to: "scorecards#index"
    get 'leaderboard', to: "scorecards#leaderboard"
    get 'map', to: "scorecards#map"
+   get 'prizes', to: "scorecards#prizes"
 end

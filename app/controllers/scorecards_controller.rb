@@ -12,4 +12,8 @@ class ScorecardsController < ApplicationController
   def map
     @assignments = Assignment.all
   end
+
+  def prizes
+    @assignments = Assignment.all
+  end
 end
